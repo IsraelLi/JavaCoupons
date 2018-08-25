@@ -1,0 +1,13 @@
+<div id="login-box">
+    <div class="left">
+      <h1>Update company</h1>
+      <input type="text" id="name" [(ngModel)]="company.name" name="name" required placeholder="Name">
+      <input type="text" id="email" [(ngModel)]="company.email" name="email" required placeholder="E-mail">
+      <input type="text" id="password" [(ngModel)]="company.password" name="password" required placeholder="Password">
+      
+      <button type="submit" class="btn btn-primary" (click)="saveCompany()">{{company.id ? 'Update' : 'Create'}}</button>
+      
+    </div>
+    
+  </div>
+

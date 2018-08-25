@@ -1,0 +1,32 @@
+
+<h1></h1>
+<table>
+
+  <thead>
+    
+    <tr>
+      <th><img (click)="createCompany()" src="/src/assets/Custom-Icon-Design-Flatastic-1-Add-1.ico" width="40px"><img></th>
+      <th>companie id</th>
+			<th>companie name</th>
+			<th>companie email</th>
+			
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="color: royalblue;"  *ngFor="let c of companies">
+      <td>#</td>
+      <td>{{c.id}}</td>
+      <td>{{c.name}}</td>
+      <td>{{c.email}}</td>
+      
+      <td class="text-right">
+        
+            <p (click)="editCompany(c.id)" style="color: blue">Edit</p> 
+            <p (click)="removeCompany(c.id)" style="color: #f44262">Delete</p> 
+        
+      </td>
+    </tr>
+  </tbody>
+</table>
+

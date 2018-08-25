@@ -1,0 +1,80 @@
+<!-- <h1>Create coupon</h1>
+<form #couponForm="ngForm">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" id="title" [(ngModel)]="coupon.title" name="title" required>
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <input type="text" id="message" [(ngModel)]="coupon.message" name="message">
+  </div>
+  <div class="form-group">
+    <label for="price">Price</label>
+    <input type="number" id="price" [(ngModel)]="coupon.price" name="price">
+  </div>
+  <div class="form-group">
+    <label for="amount">Amount</label>
+    <input type="number" id="amount" [(ngModel)]="coupon.amount" name="amount">
+  </div>
+  <div class="form-group">
+    <label for="startDate">Start Date</label>
+    <input type="date" id="startDate" [(ngModel)]="coupon.startDate" name="startDate">
+  </div>
+  <div class="form-group">
+    <label for="endDate">End Date</label>
+    <input type="date" id="endDate" [(ngModel)]="coupon.endDate" name="endDate">
+  </div>
+  <div class="form-group">
+    <label for="type">Type</label>
+    <select name="type" id="type" class="form-control" [(ngModel)]="coupon.type">
+      <option *ngFor="let type of types">{{type}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="imageUrl">Image Url</label>
+    <input type="text" id="imageUrl" [(ngModel)]="coupon.imageUrl" name="imageUrl">
+  </div>
+
+  <button (click)="submit()" class="btn btn-primary">{{coupon.id ? 'Update' : 'Create'}}</button>
+</form>
+ -->
+
+
+<div id="login-box">
+    <div class="left">
+      <h1>Create coupon</h1>
+      <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" [(ngModel)]="coupon.title" name="title" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <input type="text" id="message" [(ngModel)]="coupon.message" name="message">
+        </div>
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="text" id="price" [(ngModel)]="coupon.price" name="price">
+        </div>
+        <div class="form-group">
+          <label for="amount">Amount</label>
+          <input type="text" id="amount" [(ngModel)]="coupon.amount" name="amount">
+        </div>
+        <div class="form-group">
+          <label for="startDate">Start Date</label>
+          <div></div>
+          <input type="date" id="startDate" [(ngModel)]="coupon.startDate" name="startDate">
+        </div>
+        <div class="form-group">
+          <label for="endDate">End Date</label>
+          <div></div>
+          <input type="date" id="endDate" [(ngModel)]="coupon.endDate" name="endDate">
+        </div>
+        <div class="form-group">
+          <label for="type">Type</label>
+          <select name="type" id="type" class="form-control" [(ngModel)]="coupon.type">
+            <option *ngFor="let type of types">{{type}}</option>
+          </select>
+        </div>
+      
+        <button (click)="submit()" class="btn btn-primary">{{coupon.id ? 'Update' : 'Create'}}</button>  
+  </div>

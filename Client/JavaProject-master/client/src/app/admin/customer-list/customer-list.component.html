@@ -1,0 +1,25 @@
+<h1></h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+     <th><img (click)="createCustomer()" src="/src/assets/Custom-Icon-Design-Flatastic-1-Add-1.ico" width="40px"><img></th>
+      <th>id</th>
+      <th>name</th>
+      <th>email</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of customers">
+    <td>#</td>
+      <td>{{c.id}}</td>
+      <td>{{c.name}}</td>
+      <td>{{c.email}}</td>
+      <td class="text-right">
+        <p (click)="editCustomer(c.id)" style="color: blue">Edit</p> 
+        <p (click)="removeCustomer(c.id)" style="color: #f44262">Delete</p> 
+      </td>
+    </tr>
+  </tbody>
+</table>
+

@@ -1,0 +1,56 @@
+<!-- <div class="row">
+  <div *ngFor="let c of coupons" class="col-md-4">
+    <div class="card">
+      <img class="card-img-top" [src]="c.imageUrl" alt="c.title">
+      <div class="card-body">
+        <h5 class="card-title">{{c.title}}</h5>
+        <p class="card-text">Message: {{c.message}}</p>
+        <p class="card-text">price: {{c.price}}</p>
+        <p class="card-text">Amount: {{c.amount}}</p>
+        <p class="card-text">Start date: {{c.startDate}}</p>
+        <p class="card-text">End date: {{c.endDate}}</p>
+        <p class="card-text">Coupon type: {{c.type}}</p>
+        <button (click)="updateCoupon(c.id)" class="btn btn-sm btn-primary">Edit</button>
+        <button (click)="deleteCoupon(c.id)" class="btn btn-sm btn-danger">Delete</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<h1></h1>
+<table>
+
+    <thead>
+      
+      <tr>
+        <th>title</th>
+        <th>Message</th>
+        <th>price</th>
+        <th>amount</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Copun type</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="color: royalblue;"  *ngFor="let c of coupons">
+          
+        <td>{{c.title}}</td>
+        <td>{{c.message}}</td>
+        <td>{{c.price}}</td>
+        <td>{{c.amount}}</td>
+        <td>{{c.startDate}}</td>
+        <td>{{c.endDate}}</td>
+        <td>{{c.type}}</td>
+        
+        <td class="text-right">
+          
+              <p (click)="updateCoupon(c.id)" style="color: blue">Edit</p> 
+              <p (click)="deleteCoupon(c.id)" style="color: #f44262">Delete</p> 
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
